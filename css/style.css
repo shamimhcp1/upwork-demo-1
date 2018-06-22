@@ -1,0 +1,126 @@
+*{box-sizing: border-box;}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+
+}
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+
+[class*="col-"] {
+    /*border: 1px solid black;*/
+    float: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-top {height: 30px}
+.header-bottom {height: 200px}
+.menu {height: 50px}
+.slider-height {height: 400px}
+.content-height {height: 600px}
+.big-footer {height: 300px;}
+.footer {height: 50px}
+
+.container {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.row:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#demo {
+    background-image: url("../images/background.jpg");
+    background-size: 50% 100%;
+    background-position: 960px 85px;
+    background-repeat: repeat;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.img-responsive {
+    width: 16%;
+    height: 590px;
+    overflow: hidden;
+    margin-right: 0.66%;
+    position: relative;
+}
+
+.img-responsive img {
+    max-height: 590px;
+    width: auto;
+    margin: 0 0 0 -100px;
+    transform: scale(1);
+    transition: 1s;
+}
+
+.img-responsive img:hover {
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+
+.texting {
+    background: rgba(255,255,255, 0.4);
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.texting a {
+    color: white;
+}
+
+.texting span {
+    color: white;
+    background: blue;
+    font-style: italic;
+    font-family: Calibri;
+    padding-right: 10px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.texting span:hover {
+    background: blueviolet;
+    color: grey;
+}
+
+.titling h1 {
+    position: absolute;
+    background: white;
+    text-align: center;
+    width: 100%;
+    bottom: -20px;
+    font-family: Calibri;
+    text-transform: uppercase;
+}
+
+.titling a {
+    transition: 1s;
+    color: black;
+}
+.titling a:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+}
