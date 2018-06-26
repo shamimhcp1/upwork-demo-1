@@ -52,8 +52,8 @@ a {
 
 #demo {
     background-image: url("../images/background.jpg");
-    background-size: 50% 100%;
-    background-position: 960px 85px;
+    background-size: 100% 100%;
+    background-position: 960px 0px;
     background-repeat: repeat;
     padding-top: 10px;
     padding-bottom: 0px;
